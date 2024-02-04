@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+</style>;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+
+}
+
+.container { 
+    background-color: white;
+    position: absolute;
+    max-width: 336px;
+    border-radius: 16px;
+    padding: 20px; /* Adiciona espaço interno */
+    border: 2px solid #000;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 100);
+
+}
+
+
+
+.tag {
+    font-weight: 900;
+    font-size: 14px;
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px 10px; /* Espaçamento interno para abraçar o conteúdo */
+    display: inline-block; /* Faz com que a caixa abrace o conteúdo */
+    border-radius: 5px; /* Borda arredondada, ajuste conforme necessário */
+    margin-top: 8px;
+}
+
+.date { 
+    padding: 0px;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.tag .date {
+    margin-bottom: 0px;
+}
+
+.container h5 {
+    color: hsl(0, 0%, 50%);
+    font-weight: 600;
+    margin: 0;
+}
+
+.title:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.container p {
+    color: hsl(0, 0%, 50%);
+    font-weight: 600;
+}
+
+.hero img {
+    border-radius: 8px;
+
+}
+
+.autor {
+    display: flex;
+    align-items: center; /* Alinha os elementos dentro de .autor ao centro */
+    margin-top: 10px; /* Adiciona um espaço entre .text-content e .autor, ajuste conforme necessário */
+    font-weight: 900;
+    font-size: 14px;
+    
+
+}
+  
+  .autor img {
+    margin-right: 16px; /* Adiciona um espaço entre a imagem e o texto, ajuste conforme necessário */
+    width: 40px;
+  height: 40px; 
+
+}
+
+
+
+/* Media Query para telas menores que 600 pixels */
+@media only screen and (max-width: 600px) {
+    .container {
+      max-width: 280px;
+      border-radius: 16px;
+      padding: 20px; /* Adiciona espaço interno */
+      border: 2px solid #000;
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 100);
+    
+    }
+
+    .hero img {
+        width: 280px;
+
+        
+    }
+  }
+
+  
